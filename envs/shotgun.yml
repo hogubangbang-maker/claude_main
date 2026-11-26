@@ -1,0 +1,19 @@
+# conda env create -f envs/shotgun.yml
+# 버전은 설치 시점에 맞게 고정하고, 바꾸면 노트에 기록하세요.
+name: shotgun
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - fastp
+  - multiqc
+  - kneaddata
+  - metaphlan
+  - kraken2
+  - bracken
+  - spades
+  - megahit
+  - bowtie2
+  - samtools
+  - metabat2
+  - prodigal

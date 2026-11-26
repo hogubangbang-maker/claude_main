@@ -1,0 +1,8 @@
+name: amplicon
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - cutadapt
+  - picrust2
+  - lefse

@@ -1,0 +1,97 @@
+# ============================================================
+#  Microbiome BI .gitignore
+#  원칙: 코드·노트·작은 결과 요약만 올리고, 원시 데이터와 DB는 올리지 않는다.
+# ============================================================
+
+# ---------- 시퀀싱 원시 데이터 ----------
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.fastq.bz2
+*.fq.bz2
+*.sra
+*.fasta.gz
+*.fa.gz
+*.fna.gz
+
+# ---------- 정렬 / 매핑 결과 ----------
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+*.bowtie2.bz2
+*.mapout.bz2
+
+# ---------- 참조 데이터베이스 / 인덱스 ----------
+*.bt2
+*.bt2l
+*.k2d
+*.dmnd
+*.hmm
+*.h3f
+*.h3i
+*.h3m
+*.h3p
+db/
+databases/
+ref/
+kraken2_db/
+metaphlan_db/
+humann_db/
+gtdbtk_data/
+
+# ---------- 대용량 중간 산출물 ----------
+data/raw/
+data/interim/
+work/
+tmp/
+scratch/
+*_assembly/
+spades_out/
+metaspades_out/
+bins/
+checkm*/
+gtdbtk_out/
+*.qza
+*.qzv
+
+# ---------- 파이프라인 엔진 ----------
+.nextflow*
+.nextflow.log*
+.snakemake/
+slurm-*.out
+*.e[0-9]*
+*.o[0-9]*
+
+# ---------- R ----------
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+.Rapp.history
+rsconnect/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ---------- 개인정보 / 서버 설정 ----------
+.env
+*.env
+config.local.*
+paths.local.*
+*_secret*
+metadata_private/
+
+# ---------- OS / 에디터 ----------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

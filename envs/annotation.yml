@@ -1,0 +1,13 @@
+# MAG / 기능 주석용 (의존성이 무거워 따로 분리)
+name: annotation
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - checkm2
+  - drep
+  - gtdbtk
+  - kofamscan
+  - rgi
+  - ncbi-amrfinderplus
+  - diamond
